@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url('imgs/12b23a7752e8a7a4464c1ff5e596237f.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    font-family: sans-serif;
+}
+.container{
+   
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.container input{
+    width: 200px;
+    height: 25px;
+
+}
+.container button{
+    width: 100px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.todo{
+    display:flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid ;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.144);
+    box-shadow: 0 8px 32px 0 00092C;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    
+}
+    
+
+
+
+.todo p{
+    margin: 40px;
+    display: flex;
+    flex-direction:row-reverse;
+    color: rgb(8, 7, 7);
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.todo input{
+    width: 40px;
+    height: 30px;
+    margin-bottom: 9px;
+}
+
+.todo button {
+    height:30px;
+    text-align: center;
+    
+}
+#check{
+    height: 30px;
+    width: 30px;
+  
+}
