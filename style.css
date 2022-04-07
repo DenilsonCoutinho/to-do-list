@@ -86,3 +86,32 @@ h1{
     width: 30px;
   
 }
+@media(max-width:420px){
+    .todo p{
+        margin: 40px;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        color: rgb(8, 7, 7);
+        font-size: 12px;
+        font-family: sans-serif;
+    }
+    .container input{
+        width: 150px;
+    }
+    .container button{
+        width: 85px;
+        font-size: 10px;
+    }
+    .todo input{
+        width: 25px;
+       
+        margin-bottom: 9px;
+    }
+  .todo button{
+    width: 50px;
+    height: 25px;
+    position: relative;
+    top: -4px;
+    }
+}
