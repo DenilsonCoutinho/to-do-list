@@ -7,7 +7,7 @@ let check = document.createElement("input")
  check.type= "checkbox"
  check.setAttribute("onclick", "check(this)")
  addList.appendChild(check)
- 
+
 
     let removeButton = document.createElement("button")
     removeButton.type= "button"
