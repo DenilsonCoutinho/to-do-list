@@ -30,6 +30,8 @@ h1{
 .container input{
     width: 200px;
     height: 25px;
+    border-radius:3px;
+    border:none;
 
 }
 .container button{
@@ -37,6 +39,8 @@ h1{
     height: 25px;
     font-size: 12px;
     font-weight: bold;
+    border:none;
+    border-radius:3px;
 }
 
 
