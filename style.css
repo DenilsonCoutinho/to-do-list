@@ -94,7 +94,7 @@ h1{
 }
 @media(max-width:579px){
     .todo p{
-        margin: 40px;
+        margin: 15px;
         display: flex;
         flex-direction:row-reverse;
         align-items: center;
@@ -123,7 +123,6 @@ h1{
 
 @media(max-width:420px){
     .todo p{
-        margin: 40px;
         display: flex;
         flex-direction:row-reverse;
         align-items: center;
