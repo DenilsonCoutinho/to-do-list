@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form onsubmit="app.addproperty()">
     <div class="container">
     <h1>To-do-List</h1>
-        <button type="button" onclick="AddToList()">Adicionar tarefa</button>
-            <input type="text" name="goals" id="goals" placeholder="Adicione suas tarefas">
+        <button type="submit"  >Adicionar tarefa</button>
+            <input type="text" name="task" id="task" placeholder="Adicione suas tarefas">
     <div class="todo">
        
     
@@ -20,5 +21,6 @@
       
     </div>
     </div>
+</form>
 </body>
 </html>

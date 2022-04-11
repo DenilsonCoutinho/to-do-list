@@ -1,24 +1,38 @@
-
-function AddToList(){
-    let List = document.querySelector("input[name='goals'").value
-    let addList = document.createElement("p")
-    addList.innerText = List
-let check = document.createElement("input")
- check.type= "checkbox"
- check.setAttribute("onclick", "check(this)")
- addList.appendChild(check)
-
-
-    let removeButton = document.createElement("button")
-    removeButton.type= "button"
-    removeButton.innerText = "Remover"
-    removeButton.setAttribute("onclick", "RemoveFromList(this)" )
-
-    addList.appendChild(removeButton)    
- document.querySelector('.todo').appendChild(addList)
+class addTask{
+    addproperty(){
+        event.preventDefault()
+        let addTaskonlist = document.querySelector("input[name='task']").value 
+        let pElement = document.createElement("p")
+        let propertyInfo = addTaskonlist  
+        let buttonToRemove = this.createRemoveButton()
+        pElement.innerHTML += propertyInfo
+        pElement.appendChild(buttonToRemove)
+         let check = this.createCheck()
+         
+         pElement.appendChild(check)
+        document.querySelector(".todo").appendChild(pElement)
+    }
+   
+    createRemoveButton(){
+        let buttonToRemove = document.createElement("button")
+        buttonToRemove.setAttribute("onclick","app.remove()")
+        buttonToRemove.innerText = "remover"
+      
+        return buttonToRemove
+    }
+    createCheck(){
+        let checkbox = document.createElement("input")
+        checkbox.type = "checkbox"
+       
+        return checkbox
+    }
+    remove(){
+        let pToRemove = event.target.parentNode
+        document.querySelector(".todo").removeChild(pToRemove)
+    }
 }
-function RemoveFromList(button){ 
-    let premove = button.parentNode
-    document.querySelector('.todo').removeChild(premove)
-}
+
+const app = new addTask
+
+
 
